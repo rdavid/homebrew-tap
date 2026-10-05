@@ -1,0 +1,34 @@
+# SPDX-FileCopyrightText: 2026 David Rabkin
+# SPDX-License-Identifier: 0BSD
+#
+# Lints the formulas with RuboCop through brew style, which applies the
+# Homebrew configuration. The setup action installs Homebrew on the runner and
+# taps this repository.
+---
+name: rubocop
+'on':
+  pull_request:
+    paths: &paths
+      - Formula/**
+      - .github/workflows/rubocop.yml
+  push:
+    branches: [master]
+    paths: *paths
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+defaults:
+  run:
+    shell: sh
+jobs:
+  rubocop:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - run: brew style rdavid/tap

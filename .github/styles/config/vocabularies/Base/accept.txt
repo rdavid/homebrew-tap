@@ -1,3 +1,4 @@
 Homebrew
 Rabkin
 renamr
+rubocop
