@@ -2,3 +2,5 @@ Homebrew
 Rabkin
 renamr
 rubocop
+transcode
+transcoder

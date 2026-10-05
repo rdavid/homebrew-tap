@@ -14,6 +14,7 @@
 :url-renamr: https://rdavid.github.io/renamr/
 :url-rubocop: https://github.com/rdavid/homebrew-tap/actions/workflows/rubocop.yml
 :url-tests: https://github.com/rdavid/homebrew-tap/actions/workflows/tests.yml
+:url-transcode: https://rdavid.github.io/transcode/
 
 = Homebrew tap
 
@@ -74,6 +75,9 @@ brew install <formula>
 
 |{url-renamr}[renamr]
 |File and directory name normalizer.
+
+|{url-transcode}[transcode]
+|Video file transcoder and inspector.
 |===
 
 == Update
