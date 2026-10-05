@@ -2,9 +2,11 @@
 :toc: macro
 :!toc-title:
 // URLs:
+:img-hoc: https://hitsofcode.com/github/rdavid/homebrew-tap?branch=master&label=hits%20of%20code
 :img-license: https://img.shields.io/github/license/rdavid/renamr?color=94bff3&labelColor=555555&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHRleHQgeD0iMTIiIHk9IjIwIiBmb250LWZhbWlseT0iSGVsdmV0aWNhLEFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNkY2RjY2MiPiYjMTY5OzwvdGV4dD48L3N2Zz4%3D&logoColor=dcdccc&style=flat
 :img-tests: https://img.shields.io/github/actions/workflow/status/rdavid/homebrew-tap/tests.yml?branch=master&color=7f9f7f&label=tests&labelColor=555555&logo=github&logoColor=dcdccc&style=flat
 :url-cv: http://cv.rabkin.co.il
+:url-hoc: https://hitsofcode.com/view/github/rdavid/homebrew-tap?branch=master
 :url-homebrew: https://brew.sh
 :url-license: https://github.com/rdavid/homebrew-tap/blob/master/LICENSES/0BSD.txt
 :url-pages: https://rdavid.github.io/homebrew-tap/
@@ -17,6 +19,7 @@
 ++++
 <div align="right">
 <a href="{url-tests}"><img src="{img-tests}" alt="tests"></a>
+<a href="{url-hoc}"><img src="{img-hoc}" alt="hits of code"></a>
 <a href="{url-license}"><img src="{img-license}" alt="license"></a>
 </div>
 ++++
