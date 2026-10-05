@@ -1,0 +1,68 @@
+# frozen_string_literal: true
+
+# SPDX-FileCopyrightText: 2026 David Rabkin
+# SPDX-License-Identifier: 0BSD
+
+# Installs renamr and its runtime gems into a private GEM_HOME.
+class Renamr < Formula
+  desc "File and directory name normalizer"
+  homepage "https://github.com/rdavid/renamr"
+  url "https://rubygems.org/downloads/renamr-1.0.17.gem"
+  sha256 "6d495bfbf55e802b07aa26c3aa9a8cd25237614ad3ffdb4d9b500b52f15d8a2a"
+  license "0BSD"
+
+  depends_on "ruby"
+
+  resource "concurrent-ruby" do
+    url "https://rubygems.org/downloads/concurrent-ruby-1.3.7.gem"
+    sha256 "4412caec3a5ea2e5fdc52076724c071a81f2c0593d83b2ac8cbb8ca63b3151b0"
+  end
+
+  resource "ellipsized" do
+    url "https://rubygems.org/downloads/ellipsized-0.3.0.gem"
+    sha256 "678a87ada7a0b91352fd622c3c672df53c0f3d0e025a92f9a12ab206157814f7"
+  end
+
+  resource "i18n" do
+    url "https://rubygems.org/downloads/i18n-1.15.2.gem"
+    sha256 "00f9eb62412fe593b2a65a97daa75300d37abb8f7202ec748e94b6d46a9dd1b5"
+  end
+
+  resource "terminal-table" do
+    url "https://rubygems.org/downloads/terminal-table-4.0.0.gem"
+    sha256 "f504793203f8251b2ea7c7068333053f0beeea26093ec9962e62ea79f94301d2"
+  end
+
+  resource "unicode-display_width" do
+    url "https://rubygems.org/downloads/unicode-display_width-3.2.0.gem"
+    sha256 "0cdd96b5681a5949cdbc2c55e7b420facae74c4aaf9a9815eee1087cb1853c42"
+  end
+
+  resource "unicode-emoji" do
+    url "https://rubygems.org/downloads/unicode-emoji-4.2.0.gem"
+    sha256 "519e69150f75652e40bf736106cfbc8f0f73aa3fb6a65afe62fefa7f80b0f80f"
+  end
+
+  def install
+    ENV["GEM_HOME"] = libexec
+    resources.each do |r|
+      r.fetch
+      system "gem", "install", r.cached_download,
+             "--ignore-dependencies", "--no-document",
+             "--install-dir", libexec
+    end
+    system "gem", "install", cached_download,
+           "--ignore-dependencies", "--no-document",
+           "--install-dir", libexec
+    bin.install libexec/"bin/renamr"
+    bin.env_script_all_files(libexec/"bin", GEM_HOME: ENV.fetch("GEM_HOME"))
+  end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/renamr --version")
+    (testpath/"Hello World.txt").write("")
+    system bin/"renamr", "--act", "--dir", testpath
+    assert_path_exists testpath/"hello-world.txt"
+    refute_path_exists testpath/"Hello World.txt"
+  end
+end
