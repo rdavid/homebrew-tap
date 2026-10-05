@@ -139,5 +139,25 @@ code {
   #content #toc { justify-content: flex-start; gap: 1em 1.5em; }
   #toc ul.sectlevel1 { gap: 1em 1.2em; font-size: 0.86em; }
 }
+table.tableblock {
+  background: var(--bg-panel) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--fg);
+}
+table.tableblock > thead > tr > *,
+table.tableblock > tbody > tr > *,
+table.tableblock > tfoot > tr > * {
+  background: transparent !important;
+  border-color: var(--border) !important;
+  color: var(--fg) !important;
+}
+table.tableblock > thead > tr > * {
+  background: var(--bg) !important;
+  color: var(--accent-yellow) !important;
+  font-family: var(--mono);
+}
+table.tableblock > tbody > tr:nth-child(even) > * {
+  background: rgba(255, 255, 255, 0.03) !important;
+}
 hr, .sect1 + .sect1 { border-color: var(--border) !important; }
 </style>
