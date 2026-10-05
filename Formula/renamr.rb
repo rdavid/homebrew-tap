@@ -46,12 +46,13 @@ class Renamr < Formula
   def install
     ENV["GEM_HOME"] = libexec
     resources.each do |r|
-      r.fetch
-      system "gem", "install", r.cached_download,
-             "--ignore-dependencies", "--no-document",
-             "--install-dir", libexec
+      r.stage do
+        system "gem", "install", Dir["*.gem"].first,
+               "--ignore-dependencies", "--no-document",
+               "--install-dir", libexec
+      end
     end
-    system "gem", "install", cached_download,
+    system "gem", "install", Dir["*.gem"].first,
            "--ignore-dependencies", "--no-document",
            "--install-dir", libexec
     bin.install libexec/"bin/renamr"
