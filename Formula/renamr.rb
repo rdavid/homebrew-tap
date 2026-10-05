@@ -10,6 +10,7 @@ class Renamr < Formula
   url "https://rubygems.org/downloads/renamr-1.0.17.gem"
   sha256 "6d495bfbf55e802b07aa26c3aa9a8cd25237614ad3ffdb4d9b500b52f15d8a2a"
   license "0BSD"
+  revision 1
 
   depends_on "ruby"
 
