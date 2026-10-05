@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2026 David Rabkin
 # SPDX-License-Identifier: 0BSD
 #
-# Builds README.adoc into the project's GitHub Pages site. The deploy job's
+# Builds README.adoc into the GitHub Pages site. The deploy job's
 # pages:write permission publishes the built site, and id-token:write
 # OIDC-authenticates the deployment.
 ---

@@ -11,7 +11,7 @@
 :url-renamr: https://rdavid.github.io/renamr/
 :url-tests: https://github.com/rdavid/homebrew-tap/actions/workflows/tests.yml
 
-= Homebrew Tap
+= Homebrew tap
 
 [subs=attributes+]
 ++++
@@ -37,7 +37,7 @@ endif::[]
 
 == About
 
-This is a {url-homebrew}[Homebrew] tap with formulae for tools by David
+This is a {url-homebrew}[Homebrew] tap with formulas for tools by David
 Rabkin.
 ifndef::pages-build[]
 The tap also has a {url-pages}[website].
@@ -52,7 +52,7 @@ Install a formula with:
 brew install rdavid/tap/<formula>
 ----
 
-Alternatively, add the tap once and install by name:
+Or add the tap once, then install by name:
 
 [,sh]
 ----
@@ -60,7 +60,7 @@ brew tap rdavid/tap
 brew install <formula>
 ----
 
-== Formulae
+== Formulas
 
 [cols="1,3"]
 |===
