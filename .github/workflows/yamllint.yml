@@ -6,7 +6,6 @@ name: yamllint
   pull_request:
     paths: &paths
       - .github/**
-      - .rubocop.yml
   push:
     branches: [master]
     paths: *paths
@@ -29,5 +28,4 @@ jobs:
           file_or_dir: >
             ./.github/*.yml
             ./.github/workflows/*.yml
-            ./.rubocop.yml
           strict: true
