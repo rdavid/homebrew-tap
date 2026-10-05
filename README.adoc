@@ -7,7 +7,8 @@
 :url-cv: http://cv.rabkin.co.il
 :url-homebrew: https://brew.sh
 :url-license: https://github.com/rdavid/homebrew-tap/blob/master/LICENSES/0BSD.txt
-:url-renamr: https://github.com/rdavid/renamr
+:url-pages: https://rdavid.github.io/homebrew-tap/
+:url-renamr: https://rdavid.github.io/renamr/
 :url-tests: https://github.com/rdavid/homebrew-tap/actions/workflows/tests.yml
 
 = Homebrew Tap
@@ -38,6 +39,9 @@ endif::[]
 
 This is a {url-homebrew}[Homebrew] tap with formulae for tools by David
 Rabkin.
+ifndef::pages-build[]
+The tap also has a {url-pages}[website].
+endif::[]
 
 == Install
 
@@ -66,7 +70,7 @@ brew install <formula>
 |File and directory name normalizer.
 |===
 
-== Updating
+== Update
 
 Update the tap and upgrade a formula with:
 
