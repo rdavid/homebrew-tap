@@ -1,0 +1,70 @@
+// Settings:
+:toc: macro
+:!toc-title:
+// URLs:
+:img-license: https://img.shields.io/github/license/rdavid/renamr?color=94bff3&labelColor=555555&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHRleHQgeD0iMTIiIHk9IjIwIiBmb250LWZhbWlseT0iSGVsdmV0aWNhLEFyaWFsLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiNkY2RjY2MiPiYjMTY5OzwvdGV4dD48L3N2Zz4%3D&logoColor=dcdccc&style=flat
+:img-tests: https://img.shields.io/github/actions/workflow/status/rdavid/homebrew-tap/tests.yml?branch=master&color=7f9f7f&label=tests&labelColor=555555&logo=github&logoColor=dcdccc&style=flat
+:url-cv: http://cv.rabkin.co.il
+:url-homebrew: https://brew.sh
+:url-license: https://github.com/rdavid/homebrew-tap/blob/master/LICENSES/0BSD.txt
+:url-renamr: https://github.com/rdavid/renamr
+:url-tests: https://github.com/rdavid/homebrew-tap/actions/workflows/tests.yml
+
+= Homebrew Tap
+
+[subs=attributes+]
+++++
+<div align="right">
+<a href="{url-tests}"><img src="{img-tests}" alt="tests"></a>
+<a href="{url-license}"><img src="{img-license}" alt="license"></a>
+</div>
+++++
+
+toc::[]
+
+== About
+
+This is a {url-homebrew}[Homebrew] tap with formulae for tools by David
+Rabkin.
+
+== Install
+
+Install a formula with:
+
+[,sh]
+----
+brew install rdavid/tap/<formula>
+----
+
+Alternatively, add the tap once and install by name:
+
+[,sh]
+----
+brew tap rdavid/tap
+brew install <formula>
+----
+
+== Formulae
+
+[cols="1,3"]
+|===
+|Formula |Description
+
+|{url-renamr}[renamr]
+|File and directory name normalizer.
+|===
+
+== Updating
+
+Update the tap and upgrade a formula with:
+
+[,sh]
+----
+brew update
+brew upgrade <formula>
+----
+
+== License
+
+The tap is copyright {url-cv}[David Rabkin] and is available under the
+{url-license}[Zero-Clause BSD license].
