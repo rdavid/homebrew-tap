@@ -5,3 +5,5 @@
 coverage/
 rdoc/
 vendor/
+.github/styles/*
+!.github/styles/config/

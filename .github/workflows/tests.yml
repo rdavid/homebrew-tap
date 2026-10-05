@@ -7,14 +7,21 @@
 name: tests
 'on':
   pull_request:
+    paths: &paths
+      - Formula/**
+      - .github/workflows/tests.yml
   push:
     branches: [master]
+    paths: *paths
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+defaults:
+  run:
+    shell: sh
 jobs:
   test-bot:
     strategy:

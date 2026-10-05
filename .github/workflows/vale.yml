@@ -1,0 +1,45 @@
+# SPDX-FileCopyrightText: 2026 David Rabkin
+# SPDX-License-Identifier: 0BSD
+---
+name: vale
+'on':
+  pull_request:
+    paths: &paths
+      - .vale.ini
+      - .github/styles/**
+      - .github/workflows/vale.yml
+      - README.adoc
+  push:
+    branches: [master]
+    paths: *paths
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+defaults:
+  run:
+    shell: sh
+jobs:
+  vale:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends --yes asciidoctor
+      - uses: vale-cli/vale-action@v3.0.0
+        with:
+          fail_on_error: true
+          reporter: >-
+            ${{ github.event_name == 'pull_request'
+            && 'github-pr-annotations'
+            || 'local' }}
+          filter_mode: >-
+            ${{ github.event_name == 'pull_request'
+            && 'added'
+            || 'nofilter' }}
