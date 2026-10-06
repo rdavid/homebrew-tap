@@ -3,5 +3,6 @@ Rabkin
 renamr
 rubocop
 shellbase
+toolbox
 transcode
 transcoder

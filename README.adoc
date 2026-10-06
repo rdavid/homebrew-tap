@@ -15,6 +15,7 @@
 :url-rubocop: https://github.com/rdavid/homebrew-tap/actions/workflows/rubocop.yml
 :url-shellbase: https://rdavid.github.io/shellbase/
 :url-tests: https://github.com/rdavid/homebrew-tap/actions/workflows/tests.yml
+:url-toolbox: https://rdavid.github.io/toolbox/
 :url-transcode: https://rdavid.github.io/transcode/
 
 = Homebrew tap
@@ -79,6 +80,9 @@ brew install <formula>
 
 |{url-shellbase}[shellbase]
 |Foundation for Unix shell scripts.
+
+|{url-toolbox}[toolbox]
+|Unix shell scripts for everyday use.
 
 |{url-transcode}[transcode]
 |Video file transcoder and inspector.
