@@ -13,6 +13,7 @@
 :url-pages: https://rdavid.github.io/homebrew-tap/
 :url-renamr: https://rdavid.github.io/renamr/
 :url-rubocop: https://github.com/rdavid/homebrew-tap/actions/workflows/rubocop.yml
+:url-shellbase: https://rdavid.github.io/shellbase/
 :url-tests: https://github.com/rdavid/homebrew-tap/actions/workflows/tests.yml
 :url-transcode: https://rdavid.github.io/transcode/
 
@@ -75,6 +76,9 @@ brew install <formula>
 
 |{url-renamr}[renamr]
 |File and directory name normalizer.
+
+|{url-shellbase}[shellbase]
+|Foundation for Unix shell scripts.
 
 |{url-transcode}[transcode]
 |Video file transcoder and inspector.
