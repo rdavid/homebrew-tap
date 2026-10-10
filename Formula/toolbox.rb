@@ -22,7 +22,7 @@ class Toolbox < Formula
   depends_on "speedtest-cli"
   depends_on "whois"
 
-  TOOLS = %w[bak chowner copyright ival myip pingo reel rsyncx sift speed].freeze
+  TOOLS = %w[bak chowner copyright ival myip pingo reel rsynx sift speed].freeze
 
   def install
     wrapped = {
