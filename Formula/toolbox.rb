@@ -7,8 +7,8 @@
 class Toolbox < Formula
   desc "Unix shell scripts designed for everyday use"
   homepage "https://rdavid.github.io/toolbox/"
-  url "https://github.com/rdavid/toolbox/archive/refs/tags/v0.9.20260707.tar.gz"
-  sha256 "254dc7e40899fef5ca3e22deaa56255dcaad6b991ec52aa475a0e88d62b25eb8"
+  url "https://github.com/rdavid/toolbox/archive/refs/tags/v0.9.20261010.tar.gz"
+  sha256 "936592cc8d7ca503a59f47cadcefd621dc4d9abb33fe65590138798d711ebb47"
   license "0BSD"
 
   depends_on "bind"

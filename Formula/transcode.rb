@@ -28,13 +28,13 @@ class Transcode < Formula
   end
 
   resource "unicode-display_width" do
-    url "https://rubygems.org/downloads/unicode-display_width-3.2.0.gem"
-    sha256 "0cdd96b5681a5949cdbc2c55e7b420facae74c4aaf9a9815eee1087cb1853c42"
+    url "https://rubygems.org/downloads/unicode-display_width-3.3.0.gem"
+    sha256 "4b7aa66a4b11db50f6f7e98411215cd0dd10eaecb665d36eec5bcacb3fa0b613"
   end
 
   resource "unicode-emoji" do
-    url "https://rubygems.org/downloads/unicode-emoji-4.2.0.gem"
-    sha256 "519e69150f75652e40bf736106cfbc8f0f73aa3fb6a65afe62fefa7f80b0f80f"
+    url "https://rubygems.org/downloads/unicode-emoji-4.3.0.gem"
+    sha256 "11c02fa73290378c066bb0562cd4c87d8e1b706fbbe0059ca12746a4244de8ce"
   end
 
   resource "video_transcoding" do

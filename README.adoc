@@ -80,11 +80,11 @@ brew install <formula>
 |File and directory name normalizer.
 
 |{url-shellbase}[shellbase]
-|`0.9.20260707`
+|`0.9.20261010`
 |Foundation for Unix shell scripts.
 
 |{url-toolbox}[toolbox]
-|`0.9.20260707`
+|`0.9.20261010`
 |Unix shell scripts for everyday use.
 
 |{url-transcode}[transcode]

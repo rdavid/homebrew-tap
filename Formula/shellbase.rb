@@ -7,8 +7,8 @@
 class Shellbase < Formula
   desc "Foundation for Unix shell scripts"
   homepage "https://rdavid.github.io/shellbase/"
-  url "https://github.com/rdavid/shellbase/archive/refs/tags/v0.9.20260707.tar.gz"
-  sha256 "5b5c735f7c1aa8e0e15d8048ae4ff25e21214a117609021422ab18af55bd412f"
+  url "https://github.com/rdavid/shellbase/archive/refs/tags/v0.9.20261010.tar.gz"
+  sha256 "bc7d15bd50b3b4182b39726ddfe5f9481ce12ca45d47b28f354cdc007cbb17f8"
   license "0BSD"
 
   skip_clean "bin/base.sh"
