@@ -71,20 +71,24 @@ brew install <formula>
 
 == Formulas
 
-[cols="1,3"]
+[cols="1,1,3"]
 |===
-|Formula |Description
+|Formula |Version |Description
 
 |{url-renamr}[renamr]
+|`1.0.17`
 |File and directory name normalizer.
 
 |{url-shellbase}[shellbase]
+|`0.9.20260707`
 |Foundation for Unix shell scripts.
 
 |{url-toolbox}[toolbox]
+|`0.9.20260707`
 |Unix shell scripts for everyday use.
 
 |{url-transcode}[transcode]
+|`1.0.7`
 |Video file transcoder and inspector.
 |===
 
