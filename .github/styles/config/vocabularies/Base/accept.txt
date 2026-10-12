@@ -1,4 +1,7 @@
+djb's
+goredo
 Homebrew
+Makefile
 Rabkin
 renamr
 rubocop
