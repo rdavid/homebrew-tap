@@ -5,7 +5,7 @@
 
 # Installs transcode and its runtime gems into a private GEM_HOME.
 class Transcode < Formula
-  desc "Tool to transcode, inspect, and convert video files"
+  desc "Video file transcoder and inspector"
   homepage "https://rdavid.github.io/transcode/"
   url "https://rubygems.org/downloads/transcode-1.0.7.gem"
   sha256 "b698c858dbb8f03882611f4ee13b0dbdbc56c56c4052b7c50df4b831520a6d65"

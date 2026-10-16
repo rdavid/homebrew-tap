@@ -5,7 +5,7 @@
 
 # Installs a selection of the toolbox shell scripts.
 class Toolbox < Formula
-  desc "Unix shell scripts designed for everyday use"
+  desc "Unix shell scripts for everyday use"
   homepage "https://rdavid.github.io/toolbox/"
   url "https://github.com/rdavid/toolbox/archive/refs/tags/v0.9.20261010.tar.gz"
   sha256 "936592cc8d7ca503a59f47cadcefd621dc4d9abb33fe65590138798d711ebb47"

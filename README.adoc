@@ -48,10 +48,10 @@ endif::[]
 
 == About
 
-This is a {url-homebrew}[Homebrew] tap with formulas for tools by David
+This {url-homebrew}[Homebrew] tap provides formulas for tools by David
 Rabkin.
 ifndef::pages-build[]
-The tap also has a {url-pages}[website].
+A {url-pages}[website] is also available.
 endif::[]
 
 == Install
