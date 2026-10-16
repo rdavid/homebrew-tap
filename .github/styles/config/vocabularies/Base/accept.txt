@@ -2,6 +2,7 @@ djb's
 goredo
 Homebrew
 Makefile
+pls
 Rabkin
 renamr
 rubocop

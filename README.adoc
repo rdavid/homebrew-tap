@@ -12,6 +12,7 @@
 :url-homebrew: https://brew.sh
 :url-license: https://github.com/rdavid/homebrew-tap/blob/master/LICENSES/0BSD.txt
 :url-pages: https://rdavid.github.io/homebrew-tap/
+:url-pls: https://rdavid.github.io/pls/
 :url-renamr: https://rdavid.github.io/renamr/
 :url-rubocop: https://github.com/rdavid/homebrew-tap/actions/workflows/rubocop.yml
 :url-shellbase: https://rdavid.github.io/shellbase/
@@ -79,6 +80,10 @@ brew install <formula>
 |{url-goredo}[goredo]
 |`2.10.0`
 |Go implementation of djb's redo, a Makefile replacement.
+
+|{url-pls}[pls]
+|`1.0.5`
+|Package lister that prints dependent package names.
 
 |{url-renamr}[renamr]
 |`1.0.17`
