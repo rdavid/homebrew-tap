@@ -86,11 +86,11 @@ brew upgrade <formula>
 |Formula |Version |Description
 
 |{url-goredo}[goredo]
-|`2.10.0`
+|`2.11.0`
 |Go implementation of djb's redo, a Makefile replacement.
 
 |{url-pls}[pls]
-|`1.0.5`
+|`1.0.6`
 |Package lister that prints dependent package names.
 
 |{url-renamr}[renamr]
@@ -98,11 +98,11 @@ brew upgrade <formula>
 |File and directory name normalizer.
 
 |{url-shellbase}[shellbase]
-|`0.9.20261010`
+|`0.9.20261111`
 |Foundation for Unix shell scripts.
 
 |{url-toolbox}[toolbox]
-|`0.9.20261010`
+|`0.9.20261111`
 |Unix shell scripts for everyday use.
 
 |{url-transcode}[transcode]

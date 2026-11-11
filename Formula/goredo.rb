@@ -7,7 +7,7 @@
 class Goredo < Formula
   desc "Go implementation of djb's redo, a Makefile replacement"
   homepage "https://rdavid.github.io/goredoer/"
-  version "2.10.0"
+  version "2.11.0"
   license "GPL-3.0-only"
 
   livecheck do
@@ -20,23 +20,23 @@ class Goredo < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/rdavid/goredoer/releases/download/v0.9.20261010/goredo-2.10.0-darwin-arm64.tar.gz"
-      sha256 "37f0f6be7b94d5980299ce5b5eab09919e9d2f80533a311de7dbf47a0ae5ca2d"
+      url "https://github.com/rdavid/goredoer/releases/download/v0.9.20261111/goredo-2.11.0-darwin-arm64.tar.gz"
+      sha256 "f76b2258f795c700ffc2d3f2271af8c84508da9948ffef2d74f1e4ceb0a2df26"
     end
     on_intel do
-      url "https://github.com/rdavid/goredoer/releases/download/v0.9.20261010/goredo-2.10.0-darwin-amd64.tar.gz"
-      sha256 "09873eca473fcf25eb273e63cf307c569322ba824a54b2d8bb9e84fbd5050d5a"
+      url "https://github.com/rdavid/goredoer/releases/download/v0.9.20261111/goredo-2.11.0-darwin-amd64.tar.gz"
+      sha256 "aed8a63558d1f706c58158dd4403ccaf3075ad7439b45c19d9aa1461aa2851d2"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/rdavid/goredoer/releases/download/v0.9.20261010/goredo-2.10.0-linux-arm64.tar.gz"
-      sha256 "f92e904a0ef6e4f3b189047072cadd931e187990aca29c307120a5f46f9bb39e"
+      url "https://github.com/rdavid/goredoer/releases/download/v0.9.20261111/goredo-2.11.0-linux-arm64.tar.gz"
+      sha256 "fa3a2cab2af7c6b5fa9d1cdaced6048a7c69c70d63810bb1a3c7914fea02fc5e"
     end
     on_intel do
-      url "https://github.com/rdavid/goredoer/releases/download/v0.9.20261010/goredo-2.10.0-linux-amd64.tar.gz"
-      sha256 "9e670c09a9c8ce523f00f7c8d9206158eaeabff35500f589a45d5cda8a656fb2"
+      url "https://github.com/rdavid/goredoer/releases/download/v0.9.20261111/goredo-2.11.0-linux-amd64.tar.gz"
+      sha256 "7375e35413a931a91bfc12f985b459a4f149930c5c2998dd4840a596d483e428"
     end
   end
 

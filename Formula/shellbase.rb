@@ -7,15 +7,14 @@
 class Shellbase < Formula
   desc "Foundation for Unix shell scripts"
   homepage "https://rdavid.github.io/shellbase/"
-  url "https://github.com/rdavid/shellbase/archive/refs/tags/v0.9.20261010.tar.gz"
-  sha256 "bc7d15bd50b3b4182b39726ddfe5f9481ce12ca45d47b28f354cdc007cbb17f8"
+  url "https://github.com/rdavid/shellbase/archive/refs/tags/v0.9.20261111.tar.gz"
+  sha256 "936f2f03b620fccf43f912d35b12cb72fd5672a7aebcacd92b55744869ac557b"
   license "0BSD"
 
   skip_clean "bin/base.sh"
 
   def install
     bin.install "lib/base.sh"
-    (bin/"base.sh").chmod 0755
   end
 
   test do
