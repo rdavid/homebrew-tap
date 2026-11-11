@@ -1,5 +1,8 @@
 # SPDX-FileCopyrightText: 2026 David Rabkin
 # SPDX-License-Identifier: 0BSD
+#
+# Lints the workflows with actionlint. The release archive is downloaded
+# directly and verified against its published SHA-256 checksum before it runs.
 ---
 name: actionlint
 'on':
@@ -26,18 +29,19 @@ jobs:
       - uses: actions/checkout@v7.0.1
         with:
           persist-credentials: false
-      - id: get
-        run: |
-          srv=https://raw.githubusercontent.com/rhysd/actionlint
+      - run: |
+          srv=https://github.com/rhysd/actionlint
+          sum=8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8
           ver=1.7.12
+          tar=actionlint_${ver}_linux_amd64.tar.gz
           curl \
             --fail \
             --location \
+            --output "$tar" \
             --retry 3 \
             --show-error \
             --silent \
-            "$srv/v$ver/scripts/download-actionlint.bash" |
-            bash -s "$ver"
-      - env:
-          exe: ${{ steps.get.outputs.executable }}
-        run: "$exe"
+            "$srv/releases/download/v$ver/$tar"
+          printf '%s  %s\n' "$sum" "$tar" | sha256sum --check --status
+          tar --extract --file "$tar" --gzip actionlint
+          ./actionlint
