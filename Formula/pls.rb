@@ -5,7 +5,7 @@
 
 # Installs pls into a private GEM_HOME.
 class Pls < Formula
-  desc "Package lister that prints dependent package names"
+  desc "Dependency tree printer for npm packages"
   homepage "https://rdavid.github.io/pls/"
   url "https://rubygems.org/downloads/pls-1.0.6.gem"
   sha256 "fe895d0beb8c9d760271e1d381168ab8757501e2205690189d24b869725f10c8"

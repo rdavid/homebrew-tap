@@ -5,7 +5,7 @@
 
 # Installs renamr and its runtime gems into a private GEM_HOME.
 class Renamr < Formula
-  desc "File and directory name normalizer"
+  desc "File and directory name normalizer to lowercase, digits, and hyphens"
   homepage "https://github.com/rdavid/renamr"
   url "https://rubygems.org/downloads/renamr-1.0.17.gem"
   sha256 "6d495bfbf55e802b07aa26c3aa9a8cd25237614ad3ffdb4d9b500b52f15d8a2a"

@@ -5,7 +5,7 @@
 
 # Installs the shellbase framework as a single POSIX shell script.
 class Shellbase < Formula
-  desc "Foundation for Unix shell scripts"
+  desc "Unix shell framework for logging, validation, and signal handling"
   homepage "https://rdavid.github.io/shellbase/"
   url "https://github.com/rdavid/shellbase/archive/refs/tags/v0.9.20261111.tar.gz"
   sha256 "936f2f03b620fccf43f912d35b12cb72fd5672a7aebcacd92b55744869ac557b"

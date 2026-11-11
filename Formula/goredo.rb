@@ -5,7 +5,7 @@
 
 # Installs a prebuilt goredo binary from the goredoer releases.
 class Goredo < Formula
-  desc "Go implementation of djb's redo, a Makefile replacement"
+  desc "Go implementation of djb's redo build system"
   homepage "https://rdavid.github.io/goredoer/"
   version "2.11.0"
   license "GPL-3.0-only"

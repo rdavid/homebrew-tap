@@ -87,27 +87,27 @@ brew upgrade <formula>
 
 |{url-goredo}[goredo]
 |`2.11.0`
-|Go implementation of djb's redo, a Makefile replacement.
+|Go implementation of djb's redo build system.
 
 |{url-pls}[pls]
 |`1.0.6`
-|Package lister that prints dependent package names.
+|Dependency tree printer for npm packages.
 
 |{url-renamr}[renamr]
 |`1.0.17`
-|File and directory name normalizer.
+|File and directory name normalizer to lowercase, digits, and hyphens.
 
 |{url-shellbase}[shellbase]
 |`0.9.20261111`
-|Foundation for Unix shell scripts.
+|Unix shell framework for logging, validation, and signal handling.
 
 |{url-toolbox}[toolbox]
 |`0.9.20261111`
-|Unix shell scripts for everyday use.
+|Unix shell utilities for backups, media, and networking.
 
 |{url-transcode}[transcode]
 |`1.0.7`
-|Video file transcoder and inspector.
+|Batch video transcoder and inspector.
 |===
 
 == License
